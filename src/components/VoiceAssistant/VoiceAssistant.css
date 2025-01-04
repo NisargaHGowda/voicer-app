@@ -1,0 +1,137 @@
+
+.voice-assistant {
+  font-family: Arial, sans-serif;
+  background-color: #f4f7fc;
+  padding: 20px;
+  border-radius: 8px;
+  width: 80%;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+/* Container for Topic, Time Remaining, and VOICER discussion */
+.voice-assistant > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.voice-assistant > div > div {
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Topic section */
+.voice-assistant h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.voice-assistant p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.voice-assistant h4 {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+/* Time remaining section */
+.voice-assistant > div > div:last-child {
+  min-width: 150px;
+  text-align: center;
+  background-color: #dff7d3;
+  border: 1px solid #c1e5c9;
+}
+
+.voice-assistant .time-remaining p {
+  font-size: 20px;
+  font-weight: bold;
+  color: #7d2e2e;
+}
+
+/* VOICER discussion container */
+.voice-assistant .discussion-container {
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.voice-assistant .discussion-container h4 {
+  font-size: 20px;
+  color: #333;
+}
+
+.voice-assistant .discussion-container p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Button Styles */
+.voice-assistant button {
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: transparent;
+  transition: transform 0.2s ease-in-out;
+}
+
+.voice-assistant button:hover {
+  transform: scale(1.1);
+}
+
+.voice-assistant button:active {
+  transform: scale(0.9);
+}
+
+/* Download button */
+.voice-assistant .download-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #af4c4c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.voice-assistant .download-btn:hover {
+  background-color: #388e8a;
+}
+
+.voice-assistant .download-btn:active {
+  background-color: #385d8e;
+}
+
+/* Microphone icon button size */
+.voice-assistant button img {
+  width: 50px;
+  height: 50px;
+}
+
+/* Display for active microphone */
+.voice-assistant p {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #333;
+}
+
+.voice-assistant .response-message {
+  font-size: 16px;
+  color: #00796b;
+}
+
+.voice-assistant .response-message.error {
+  color: #d32f2f;
+}
+
