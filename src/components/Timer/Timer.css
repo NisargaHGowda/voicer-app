@@ -1,7 +1,30 @@
-.timer {
-    text-align: center;
-    font-size: 18px;
-    margin: 20px 0;
-    color: #e3161696;
-  }
-  
+.timer-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 20px;
+  justify-content:center;
+  margin: 24px;
+  padding: 16px;
+  border: 0px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-sizing: border-box;
+}
+
+
+
+.timer-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
+
+.timer-container p {
+  font-size: 1rem;
+  color: #333;
+  margin: 0;
+}
+
+/* margin-top: 20px;
+    padding: 15px; */

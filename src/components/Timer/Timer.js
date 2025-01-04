@@ -1,13 +1,14 @@
 import React, { useState, useEffect } from 'react';
-import clockIcon from '../../assets/icons/clock-icon.png'; 
+import './Timer.css';
+import clockIcon from '../../assets/icons/clock-icon.png';
 
-const Timer = ({ duration }) => {
-  const [timeLeft, setTimeRemaining] = useState(duration);
+const Timer = ({ duration = 300 }) => {
+  const [timeLeft, setTimeLeft] = useState(duration);
 
   useEffect(() => {
     if (timeLeft <= 0) return;
-    const timer = setInterval(() => setTimeRemaining((prev) => prev - 1), 1000);
-    return () => clearInterval(timer);
+    const timerInterval = setInterval(() => setTimeLeft((prev) => prev - 1), 1000);
+    return () => clearInterval(timerInterval);
   }, [timeLeft]);
 
   const formatTime = (time) => {
@@ -17,9 +18,9 @@ const Timer = ({ duration }) => {
   };
 
   return (
-    <div style={{ display: 'flex',alignItems: 'center', marginTop: '20px' }}>
-      <img src={clockIcon} alt="Clock icon" style={{ width: '20px', height: '20px', marginRight: '8px' }} />
-      <p>Time Remaining: {formatTime(timeLeft)}</p>
+    <div className="timer-container">
+      <img src={clockIcon} alt="Clock Icon" className="timer-icon" />
+      <p>Time remaining: {formatTime(timeLeft)}</p>
     </div>
   );
 };

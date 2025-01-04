@@ -1,11 +1,11 @@
 import React, {useEffect} from 'react';
 import Header from './components/Header/Header.js';
-import TopicDisplay from './components/TopicDisplay/TopicDisplay.js';
 import Timer from './components/Timer/Timer.js';
 import VoiceAssistant from './components/VoiceAssistant/VoiceAssistant.js';
 import './App.css';
 import alanBtn from "@alan-ai/alan-sdk-web";
 import dialogScripts from './components/scripts/dialogScripts.js';
+import ChatMessage from './components/ChatMessage/ChatMessage.js'
 
 const App = () => {
 
@@ -27,16 +27,15 @@ const App = () => {
                 alanBtn().playText("Good, thank you. What about you?");
               }
               
-          }
+          },
       });
     }, []);
-
 
   return (
     <div className="App">
       <Header />
-      <TopicDisplay />
       <Timer />
+      <ChatMessage />
       <VoiceAssistant />
     </div>
   );

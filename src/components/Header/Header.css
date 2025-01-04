@@ -1,21 +1,78 @@
-.header {
-    text-align: center;
-    background-color: #f4f4f4;
+    .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 20px;
-    border-bottom: 2px solid #ddd;
   }
   
-  .logo {
-    font-size: 30px;
-    font-weight: bold;
-    color: #007BFF;
+  .center-content {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .logo img {
+    width: 80px; 
+    margin-bottom: 10px;
   }
   
   h1 {
-    font-size: 24px;
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+    color: #9333ea; 
+    margin: 5px 0;
   }
   
   p {
-    font-size: 16px;
-    color: #666;
+    font-size: 1.5rem;
+    color: #666; 
+    margin-top: 0.5rem;
+  }
+  
+  .left-content {
+    text-align: left;
+    max-width: 600px;
+    width: 100%; 
+    margin-top: 20px;
+  }
+  
+  .left-content h2 {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    margin-bottom: 1rem;
+  }
+  
+  .left-content p {
+    font-size: 1rem;
+    color: #666; 
+    line-height: 1.5;
+  }
+
+  .topic-container {
+    margin-top: 5px;
+    margin-left: 78px;
+    padding: 1.5rem;
+
+    border: 2px solid blue;
+    border-radius: 8px;
+    background-color: #f0f8ff;
+    box-sizing: border-box;
+    border-width: 1px;
+    border-style: solid;
+  }
+
+  .topic-container h2 {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+    margin-top: 4px;
+    margin-left: 4px;
+  }
+
+  .topic-container p {
+    font-size: 1rem;
+    color:#6433ea;
+    line-height: 1.6;
+    margin-bottom: 4px;
+    margin-left: 4px;
   }
