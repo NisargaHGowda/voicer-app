@@ -23,7 +23,6 @@
   
 }
 
-
 .download-button {
   margin-bottom: 10px;
   padding: 10px 20px ;
@@ -61,7 +60,7 @@
   border-radius: 50%;
   background-size: cover;
   cursor: pointer;
-  margin-top: 10px;
+  margin-top: 0px;
 }
 
 .listening-text {
@@ -95,3 +94,70 @@
     font-size: 0.75rem;
   }
 }
+
+
+.conversation-log {
+  max-height: 300px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+.message {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.message.user {
+  color: blue;
+}
+
+.message.bot {
+  color: green;
+}
+
+.voice-selector {
+  margin-bottom: 20px;
+  font-family: Arial, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.voice-selector label {
+  font-size: 16px;
+  font-weight: bold;
+  margin-right: 10px;
+  color: #333;
+}
+
+.voice-selector select {
+  padding: 8px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  color: #333;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.voice-selector select:focus {
+  outline: none;
+  border-color: #007bff;
+  background-color: #fff;
+}
+
+.voice-selector select option {
+  padding: 10px;
+  background-color: #fff;
+  color: #333;
+}
+
+
+.voice-selector select option:hover {
+  background-color: #007bff;
+}
+

@@ -4,7 +4,6 @@ import Timer from './components/Timer/Timer.js';
 import VoiceAssistant from './components/VoiceAssistant/VoiceAssistant.js';
 import './App.css';
 import alanBtn from "@alan-ai/alan-sdk-web";
-import dialogScripts from './components/scripts/dialogScripts.js';
 import ChatMessage from './components/ChatMessage/ChatMessage.js'
 
 const App = () => {
@@ -15,7 +14,6 @@ const App = () => {
           host: 'v1.alan.app',
           onCommand: (commandData) => {
               if (commandData.command === 'go:back') {
-                console.log(dialogScripts.greeting);
                  console.log('Go back command received');
               }
 
